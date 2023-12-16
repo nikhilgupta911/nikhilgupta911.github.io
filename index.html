@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en-US" style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style type="text/css">
+        *,
+         :after,
+         :before {
+            border: 0 solid #e5e7eb;
+            box-sizing: border-box
+        }
+        
+         :after,
+         :before {
+            --tw-content: ""
+        }
+        
+        html {
+            -webkit-text-size-adjust: 100%;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            line-height: 1.5;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4
+        }
+        
+        body {
+            line-height: inherit;
+            margin: 0
+        }
+        
+        hr {
+            border-top-width: 1px;
+            color: inherit;
+            height: 0
+        }
+        
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+        
+        b,
+        strong {
+            font-weight: bolder
+        }
+        
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+            font-size: 1em
+        }
+        
+        small {
+            font-size: 80%
+        }
+        
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+        
+        sub {
+            bottom: -.25em
+        }
+        
+        sup {
+            top: -.5em
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-color: inherit;
+            text-indent: 0
+        }
+        
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font-family: inherit;
+            font-size: 100%;
+            line-height: inherit;
+            margin: 0;
+            padding: 0
+        }
+        
+        button,
+        select {
+            text-transform: none
+        }
+        
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+        
+         :-moz-focusring {
+            outline: auto
+        }
+        
+         :-moz-ui-invalid {
+            box-shadow: none
+        }
+        
+        progress {
+            vertical-align: baseline
+        }
+        
+         ::-webkit-inner-spin-button,
+         ::-webkit-outer-spin-button {
+            height: auto
+        }
+        
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+        
+         ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+        
+         ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+        
+        summary {
+            display: list-item
+        }
+        
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+        
+        fieldset {
+            margin: 0
+        }
+        
+        fieldset,
+        legend {
+            padding: 0
+        }
+        
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        textarea {
+            resize: vertical
+        }
+        
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            color: #9ca3af;
+            opacity: 1
+        }
+        
+        input:-ms-input-placeholder,
+        textarea:-ms-input-placeholder {
+            color: #9ca3af;
+            opacity: 1
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: #9ca3af;
+            opacity: 1
+        }
+        
+        [role=button],
+        button {
+            cursor: pointer
+        }
+        
+         :disabled {
+            cursor: default
+        }
+        
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+        
+        img,
+        video {
+            height: auto;
+            max-width: 100%
+        }
+        
+        [hidden] {
+            display: none
+        }
+        
+        [multiple],
+        [type=date],
+        [type=datetime-local],
+        [type=email],
+        [type=month],
+        [type=number],
+        [type=password],
+        [type=search],
+        [type=tel],
+        [type=text],
+        [type=time],
+        [type=url],
+        [type=week],
+        select,
+        textarea {
+            --tw-shadow: 0 0 transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            border-color: #6b7280;
+            border-radius: 0;
+            border-width: 1px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding: .5rem .75rem
+        }
+        
+        [multiple]:focus,
+        [type=date]:focus,
+        [type=datetime-local]:focus,
+        [type=email]:focus,
+        [type=month]:focus,
+        [type=number]:focus,
+        [type=password]:focus,
+        [type=search]:focus,
+        [type=tel]:focus,
+        [type=text]:focus,
+        [type=time]:focus,
+        [type=url]:focus,
+        [type=week]:focus,
+        select:focus,
+        textarea:focus {
+            --tw-ring-inset: var(--tw-empty, );
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: #2563eb;
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            border-color: #2563eb;
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+        
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            color: #6b7280;
+            opacity: 1
+        }
+        
+        input:-ms-input-placeholder,
+        textarea:-ms-input-placeholder {
+            color: #6b7280;
+            opacity: 1
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: #6b7280;
+            opacity: 1
+        }
+        
+         ::-webkit-datetime-edit-fields-wrapper {
+            padding: 0
+        }
+        
+         ::-webkit-date-and-time-value {
+            min-height: 1.5em
+        }
+        
+         ::-webkit-datetime-edit,
+         ::-webkit-datetime-edit-day-field,
+         ::-webkit-datetime-edit-hour-field,
+         ::-webkit-datetime-edit-meridiem-field,
+         ::-webkit-datetime-edit-millisecond-field,
+         ::-webkit-datetime-edit-minute-field,
+         ::-webkit-datetime-edit-month-field,
+         ::-webkit-datetime-edit-second-field,
+         ::-webkit-datetime-edit-year-field {
+            padding-bottom: 0;
+            padding-top: 0
+        }
+        
+        select {
+            color-adjust: exact;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+            background-position: right .5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact
+        }
+        
+        [multiple] {
+            color-adjust: unset;
+            background-image: none;
+            background-position: 0 0;
+            background-repeat: unset;
+            background-size: auto auto;
+            background-size: initial;
+            padding-right: .75rem;
+            -webkit-print-color-adjust: unset
+        }
+        
+        [type=checkbox],
+        [type=radio] {
+            color-adjust: exact;
+            --tw-shadow: 0 0 transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            background-origin: border-box;
+            border-color: #6b7280;
+            border-width: 1px;
+            color: #2563eb;
+            display: inline-block;
+            flex-shrink: 0;
+            height: 1rem;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            width: 1rem
+        }
+        
+        [type=checkbox] {
+            border-radius: 0
+        }
+        
+        [type=radio] {
+            border-radius: 100%
+        }
+        
+        [type=checkbox]:focus,
+        [type=radio]:focus {
+            --tw-ring-inset: var(--tw-empty, );
+            --tw-ring-offset-width: 2px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: #2563eb;
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+        
+        [type=checkbox]:checked,
+        [type=radio]:checked {
+            background-color: currentColor;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-color: transparent
+        }
+        
+        [type=checkbox]:checked {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E")
+        }
+        
+        [type=radio]:checked {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E")
+        }
+        
+        [type=checkbox]:checked:focus,
+        [type=checkbox]:checked:hover,
+        [type=radio]:checked:focus,
+        [type=radio]:checked:hover {
+            background-color: currentColor;
+            border-color: transparent
+        }
+        
+        [type=checkbox]:indeterminate {
+            background-color: currentColor;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3E%3C/svg%3E");
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-color: transparent
+        }
+        
+        [type=checkbox]:indeterminate:focus,
+        [type=checkbox]:indeterminate:hover {
+            background-color: currentColor;
+            border-color: transparent
+        }
+        
+        [type=file] {
+            background: unset;
+            border-color: inherit;
+            border-radius: 0;
+            border-width: 0;
+            font-size: unset;
+            line-height: inherit;
+            padding: 0
+        }
+        
+        [type=file]:focus {
+            outline: 1px auto -webkit-focus-ring-color
+        }
+        
+        *,
+         :after,
+         :before {
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgba(59, 130, 246, .5);
+            --tw-ring-offset-shadow: 0 0 transparent;
+            --tw-ring-shadow: 0 0 transparent;
+            --tw-shadow: 0 0 transparent;
+            --tw-shadow-colored: 0 0 transparent;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+        
+        .a {
+            color: var(--tw-prose-body);
+            max-width: 65ch
+        }
+        
+        .a :where([class~=lead]):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-lead);
+            font-size: 1.25em;
+            line-height: 1.6;
+            margin-bottom: 1.2em;
+            margin-top: 1.2em
+        }
+        
+        .a :where(a):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-links);
+            font-weight: 500;
+            text-decoration: underline
+        }
+        
+        .a :where(strong):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600
+        }
+        
+        .a :where(ol):not(:where([class~=not-prose] *)) {
+            list-style-type: decimal;
+            padding-left: 1.625em
+        }
+        
+        .a :where(ol[type=A]):not(:where([class~=not-prose] *)) {
+            list-style-type: upper-alpha
+        }
+        
+        .a :where(ol[type=a]):not(:where([class~=not-prose] *)) {
+            list-style-type: lower-alpha
+        }
+        
+        .a :where(ol[type=A s]):not(:where([class~=not-prose] *)) {
+            list-style-type: upper-alpha
+        }
+        
+        .a :where(ol[type=a s]):not(:where([class~=not-prose] *)) {
+            list-style-type: lower-alpha
+        }
+        
+        .a :where(ol[type=I]):not(:where([class~=not-prose] *)) {
+            list-style-type: upper-roman
+        }
+        
+        .a :where(ol[type=i]):not(:where([class~=not-prose] *)) {
+            list-style-type: lower-roman
+        }
+        
+        .a :where(ol[type=I s]):not(:where([class~=not-prose] *)) {
+            list-style-type: upper-roman
+        }
+        
+        .a :where(ol[type=i s]):not(:where([class~=not-prose] *)) {
+            list-style-type: lower-roman
+        }
+        
+        .a :where(ol[type="1"]):not(:where([class~=not-prose] *)) {
+            list-style-type: decimal
+        }
+        
+        .a :where(ul):not(:where([class~=not-prose] *)) {
+            list-style-type: disc;
+            padding-left: 1.625em
+        }
+        
+        .a :where(ol>li):not(:where([class~=not-prose] *))::marker {
+            color: var(--tw-prose-counters);
+            font-weight: 400
+        }
+        
+        .a :where(ul>li):not(:where([class~=not-prose] *))::marker {
+            color: var(--tw-prose-bullets)
+        }
+        
+        .a :where(hr):not(:where([class~=not-prose] *)) {
+            border-color: var(--tw-prose-hr);
+            border-top-width: 1px;
+            margin-bottom: 3em;
+            margin-top: 3em
+        }
+        
+        .a :where(blockquote):not(:where([class~=not-prose] *)) {
+            border-left-color: var(--tw-prose-quote-borders);
+            border-left-width: .25rem;
+            color: var(--tw-prose-quotes);
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 1.6em;
+            margin-top: 1.6em;
+            padding-left: 1em;
+            quotes: "\201C" "\201D" "\2018" "\2019"
+        }
+        
+        .a :where(blockquote p:first-of-type):not(:where([class~=not-prose] *)):before {
+            content: open-quote
+        }
+        
+        .a :where(blockquote p:last-of-type):not(:where([class~=not-prose] *)):after {
+            content: close-quote
+        }
+        
+        .a :where(h1):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-headings);
+            font-size: 2.25em;
+            font-weight: 800;
+            line-height: 1.1111111;
+            margin-bottom: .8888889em;
+            margin-top: 0
+        }
+        
+        .a :where(h1 strong):not(:where([class~=not-prose] *)) {
+            font-weight: 900
+        }
+        
+        .a :where(h2):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-headings);
+            font-size: 1.5em;
+            font-weight: 700;
+            line-height: 1.3333333;
+            margin-bottom: 1em;
+            margin-top: 2em
+        }
+        
+        .a :where(h2 strong):not(:where([class~=not-prose] *)) {
+            font-weight: 800
+        }
+        
+        .a :where(h3):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-headings);
+            font-size: 1.25em;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-bottom: .6em;
+            margin-top: 1.6em
+        }
+        
+        .a :where(h3 strong):not(:where([class~=not-prose] *)) {
+            font-weight: 700
+        }
+        
+        .a :where(h4):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-headings);
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: .5em;
+            margin-top: 1.5em
+        }
+        
+        .a :where(h4 strong):not(:where([class~=not-prose] *)) {
+            font-weight: 700
+        }
+        
+        .a :where(figure>*):not(:where([class~=not-prose] *)) {
+            margin-bottom: 0;
+            margin-top: 0
+        }
+        
+        .a :where(figcaption):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-captions);
+            font-size: .875em;
+            line-height: 1.4285714;
+            margin-top: .8571429em
+        }
+        
+        .a :where(code):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-code);
+            font-size: .875em;
+            font-weight: 600
+        }
+        
+        .a :where(code):not(:where([class~=not-prose] *)):before {
+            content: "`"
+        }
+        
+        .a :where(code):not(:where([class~=not-prose] *)):after {
+            content: "`"
+        }
+        
+        .a :where(a code):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-links)
+        }
+        
+        .a :where(pre):not(:where([class~=not-prose] *)) {
+            background-color: var(--tw-prose-pre-bg);
+            border-radius: .375rem;
+            color: var(--tw-prose-pre-code);
+            font-size: .875em;
+            font-weight: 400;
+            line-height: 1.7142857;
+            margin-bottom: 1.7142857em;
+            margin-top: 1.7142857em;
+            overflow-x: auto;
+            padding: .8571429em 1.1428571em
+        }
+        
+        .a :where(pre code):not(:where([class~=not-prose] *)) {
+            background-color: transparent;
+            border-radius: 0;
+            border-width: 0;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            padding: 0
+        }
+        
+        .a :where(pre code):not(:where([class~=not-prose] *)):before {
+            content: none
+        }
+        
+        .a :where(pre code):not(:where([class~=not-prose] *)):after {
+            content: none
+        }
+        
+        .a :where(table):not(:where([class~=not-prose] *)) {
+            font-size: .875em;
+            line-height: 1.7142857;
+            margin-bottom: 2em;
+            margin-top: 2em;
+            table-layout: auto;
+            text-align: left;
+            width: 100%
+        }
+        
+        .a :where(thead):not(:where([class~=not-prose] *)) {
+            border-bottom-color: var(--tw-prose-th-borders);
+            border-bottom-width: 1px
+        }
+        
+        .a :where(thead th):not(:where([class~=not-prose] *)) {
+            color: var(--tw-prose-headings);
+            font-weight: 600;
+            padding-bottom: .5714286em;
+            padding-left: .5714286em;
+            padding-right: .5714286em;
+            vertical-align: bottom
+        }
+        
+        .a :where(tbody tr):not(:where([class~=not-prose] *)) {
+            border-bottom-color: var(--tw-prose-td-borders);
+            border-bottom-width: 1px
+        }
+        
+        .a :where(tbody tr:last-child):not(:where([class~=not-prose] *)) {
+            border-bottom-width: 0
+        }
+        
+        .a :where(tbody td):not(:where([class~=not-prose] *)) {
+            padding: .5714286em;
+            vertical-align: baseline
+        }
+        
+        .a {
+            --tw-prose-body: #374151;
+            --tw-prose-headings: #111827;
+            --tw-prose-lead: #4b5563;
+            --tw-prose-links: #111827;
+            --tw-prose-bold: #111827;
+            --tw-prose-counters: #6b7280;
+            --tw-prose-bullets: #d1d5db;
+            --tw-prose-hr: #e5e7eb;
+            --tw-prose-quotes: #111827;
+            --tw-prose-quote-borders: #e5e7eb;
+            --tw-prose-captions: #6b7280;
+            --tw-prose-code: #111827;
+            --tw-prose-pre-code: #e5e7eb;
+            --tw-prose-pre-bg: #1f2937;
+            --tw-prose-th-borders: #d1d5db;
+            --tw-prose-td-borders: #e5e7eb;
+            --tw-prose-invert-body: #d1d5db;
+            --tw-prose-invert-headings: #fff;
+            --tw-prose-invert-lead: #9ca3af;
+            --tw-prose-invert-links: #fff;
+            --tw-prose-invert-bold: #fff;
+            --tw-prose-invert-counters: #9ca3af;
+            --tw-prose-invert-bullets: #4b5563;
+            --tw-prose-invert-hr: #374151;
+            --tw-prose-invert-quotes: #f3f4f6;
+            --tw-prose-invert-quote-borders: #374151;
+            --tw-prose-invert-captions: #9ca3af;
+            --tw-prose-invert-code: #fff;
+            --tw-prose-invert-pre-code: #d1d5db;
+            --tw-prose-invert-pre-bg: rgba(0, 0, 0, .5);
+            --tw-prose-invert-th-borders: #4b5563;
+            --tw-prose-invert-td-borders: #374151;
+            font-size: 1rem;
+            line-height: 1.75
+        }
+        
+        .a :where(p):not(:where([class~=not-prose] *)) {
+            margin-bottom: 1.25em;
+            margin-top: 1.25em
+        }
+        
+        .a :where(img):not(:where([class~=not-prose] *)) {
+            margin-bottom: 2em;
+            margin-top: 2em
+        }
+        
+        .a :where(video):not(:where([class~=not-prose] *)) {
+            margin-bottom: 2em;
+            margin-top: 2em
+        }
+        
+        .a :where(figure):not(:where([class~=not-prose] *)) {
+            margin-bottom: 2em;
+            margin-top: 2em
+        }
+        
+        .a :where(h2 code):not(:where([class~=not-prose] *)) {
+            font-size: .875em
+        }
+        
+        .a :where(h3 code):not(:where([class~=not-prose] *)) {
+            font-size: .9em
+        }
+        
+        .a :where(li):not(:where([class~=not-prose] *)) {
+            margin-bottom: .5em;
+            margin-top: .5em
+        }
+        
+        .a :where(ol>li):not(:where([class~=not-prose] *)) {
+            padding-left: .375em
+        }
+        
+        .a :where(ul>li):not(:where([class~=not-prose] *)) {
+            padding-left: .375em
+        }
+        
+        .a>:where(ul>li p):not(:where([class~=not-prose] *)) {
+            margin-bottom: .75em;
+            margin-top: .75em
+        }
+        
+        .a>:where(ul>li>:first-child):not(:where([class~=not-prose] *)) {
+            margin-top: 1.25em
+        }
+        
+        .a>:where(ul>li>:last-child):not(:where([class~=not-prose] *)) {
+            margin-bottom: 1.25em
+        }
+        
+        .a>:where(ol>li>:first-child):not(:where([class~=not-prose] *)) {
+            margin-top: 1.25em
+        }
+        
+        .a>:where(ol>li>:last-child):not(:where([class~=not-prose] *)) {
+            margin-bottom: 1.25em
+        }
+        
+        .a :where(ul ul,
+        ul ol,
+        ol ul,
+        ol ol):not(:where([class~=not-prose] *)) {
+            margin-bottom: .75em;
+            margin-top: .75em
+        }
+        
+        .a :where(hr+*):not(:where([class~=not-prose] *)) {
+            margin-top: 0
+        }
+        
+        .a :where(h2+*):not(:where([class~=not-prose] *)) {
+            margin-top: 0
+        }
+        
+        .a :where(h3+*):not(:where([class~=not-prose] *)) {
+            margin-top: 0
+        }
+        
+        .a :where(h4+*):not(:where([class~=not-prose] *)) {
+            margin-top: 0
+        }
+        
+        .a :where(thead th:first-child):not(:where([class~=not-prose] *)) {
+            padding-left: 0
+        }
+        
+        .a :where(thead th:last-child):not(:where([class~=not-prose] *)) {
+            padding-right: 0
+        }
+        
+        .a :where(tbody td:first-child):not(:where([class~=not-prose] *)) {
+            padding-left: 0
+        }
+        
+        .a :where(tbody td:last-child):not(:where([class~=not-prose] *)) {
+            padding-right: 0
+        }
+        
+        .a>:where(:first-child):not(:where([class~=not-prose] *)) {
+            margin-top: 0
+        }
+        
+        .a>:where(:last-child):not(:where([class~=not-prose] *)) {
+            margin-bottom: 0
+        }
+        
+        .b {
+            --tw-aspect-w: 5;
+            padding-bottom: calc(var(--tw-aspect-h)/var(--tw-aspect-w)*100%);
+            position: relative
+        }
+        
+        .b>* {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%
+        }
+        
+        .c {
+            --tw-aspect-h: 3
+        }
+        
+        [x-cloak] {
+            display: none
+        }
+        
+        .d {
+            clip: rect(0, 0, 0, 0);
+            border-width: 0;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px
+        }
+        
+        .e {
+            position: absolute
+        }
+        
+        .f {
+            position: relative
+        }
+        
+        .g {
+            top: -.5rem
+        }
+        
+        .h {
+            left: .5rem
+        }
+        
+        .i {
+            z-index: 10
+        }
+        
+        .j {
+            grid-column: span 2/span 2
+        }
+        
+        .k {
+            margin: auto
+        }
+        
+        .l {
+            margin-left: auto;
+            margin-right: auto
+        }
+        
+        .m {
+            margin-bottom: 6rem;
+            margin-top: 6rem
+        }
+        
+        .n {
+            margin-bottom: 3rem;
+            margin-top: 3rem
+        }
+        
+        .o {
+            margin-bottom: .75rem
+        }
+        
+        .p,
+        .o {
+            margin-top: .75rem
+        }
+        
+        .q {
+            margin-top: 1.5rem
+        }
+        
+        .r {
+            margin-top: .5rem
+        }
+        
+        .s {
+            margin-left: .75rem
+        }
+        
+        .t {
+            margin-top: 3rem
+        }
+        
+        .u {
+            margin-top: 1rem
+        }
+        
+        .v {
+            margin-top: 2rem
+        }
+        
+        .w {
+            margin-top: -1px
+        }
+        
+        .x {
+            margin-bottom: 1rem
+        }
+        
+        .y {
+            margin-bottom: 1.5rem
+        }
+        
+        .z {
+            margin-left: 3rem
+        }
+        
+        .ab {
+            margin-bottom: 2rem
+        }
+        
+        .bb {
+            margin-left: -12rem
+        }
+        
+        .cb {
+            margin-top: 6rem
+        }
+        
+        .db {
+            margin-right: -12rem
+        }
+        
+        .eb {
+            margin-left: .25rem
+        }
+        
+        .fb {
+            margin-top: 1.25rem
+        }
+        
+        .gb {
+            display: block
+        }
+        
+        .hb {
+            display: inline-block
+        }
+        
+        .flex {
+            display: flex
+        }
+        
+        .ib {
+            display: inline-flex
+        }
+        
+        .jb {
+            display: grid
+        }
+        
+        .hidden {
+            display: none
+        }
+        
+        .kb {
+            height: 3rem
+        }
+        
+        .lb {
+            height: 2.25rem
+        }
+        
+        .mb {
+            height: 1.25rem
+        }
+        
+        .nb {
+            height: 100vh
+        }
+        
+        .ob {
+            height: 100%
+        }
+        
+        .pb {
+            height: 1.5rem
+        }
+        
+        .qb {
+            min-height: 100%
+        }
+        
+        .rb {
+            width: 3rem
+        }
+        
+        .sb {
+            width: 100%
+        }
+        
+        .tb {
+            width: 2.25rem
+        }
+        
+        .ub {
+            width: 1.25rem
+        }
+        
+        .vb {
+            width: 1.5rem
+        }
+        
+        .wb {
+            max-width: 80rem
+        }
+        
+        .xb {
+            max-width: 48rem
+        }
+        
+        .yb {
+            max-width: 56rem
+        }
+        
+        .zb {
+            max-width: 28rem
+        }
+        
+        .ac {
+            max-width: 36rem
+        }
+        
+        .bc {
+            max-width: 32rem
+        }
+        
+        .cc {
+            max-width: 72rem
+        }
+        
+        .dc {
+            max-width: 42rem
+        }
+        
+        .ec {
+            max-width: 64rem
+        }
+        
+        .fc {
+            flex: 1 1 0%
+        }
+        
+        .gc {
+            flex-shrink: 0
+        }
+        
+        .hc {
+            flex-grow: 1
+        }
+        
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+        
+        .ic {
+            list-style-type: disc
+        }
+        
+        .jc {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+        
+        .kc {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+        
+        .lc {
+            flex-direction: row
+        }
+        
+        .mc {
+            flex-direction: column
+        }
+        
+        .nc {
+            align-items: flex-start
+        }
+        
+        .oc {
+            align-items: center
+        }
+        
+        .pc {
+            align-items: baseline
+        }
+        
+        .qc {
+            justify-content: center
+        }
+        
+        .rc {
+            justify-content: space-between
+        }
+        
+        .sc {
+            gap: 3rem
+        }
+        
+        .tc {
+            gap: .75rem
+        }
+        
+        .uc {
+            gap: 1.5rem
+        }
+        
+        .vc {
+            gap: 1rem
+        }
+        
+        .wc {
+            gap: 6rem
+        }
+        
+        .xc {
+            gap: .5rem
+        }
+        
+        .yc {
+            row-gap: 3rem
+        }
+        
+        .zc {
+            -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem
+        }
+        
+        .bd>:not([hidden])~:not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-bottom: calc(2rem*var(--tw-space-y-reverse));
+            margin-top: calc(2rem*(1 - var(--tw-space-y-reverse)))
+        }
+        
+        .cd>:not([hidden])~:not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-bottom: calc(1rem*var(--tw-space-y-reverse));
+            margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+        }
+        
+        .dd>:not([hidden])~:not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-bottom: calc(1.5rem*var(--tw-space-y-reverse));
+            margin-top: calc(1.5rem*(1 - var(--tw-space-y-reverse)))
+        }
+        
+        .ed>:not([hidden])~:not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-left: calc(1.5rem*(1 - var(--tw-space-x-reverse)));
+            margin-right: calc(1.5rem*var(--tw-space-x-reverse))
+        }
+        
+        .fd {
+            overflow: auto
+        }
+        
+        .gd {
+            overflow: hidden
+        }
+        
+        .hd {
+            border-radius: .75rem
+        }
+        
+        .id {
+            border-radius: 9999px
+        }
+        
+        .jd {
+            border-radius: .5rem
+        }
+        
+        .kd {
+            border-radius: 1rem
+        }
+        
+        .ld {
+            border-radius: .375rem
+        }
+        
+        .md {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0
+        }
+        
+        .nd {
+            border-width: 2px
+        }
+        
+        .od {
+            border-width: 0
+        }
+        
+        .pd {
+            border-width: 1px
+        }
+        
+        .qd {
+            border-bottom-width: 1px
+        }
+        
+        .rd {
+            border-top-width: 1px
+        }
+        
+        .sd {
+            --tw-border-opacity: 1;
+            border-color: rgba(70, 74, 93, var(--tw-border-opacity))
+        }
+        
+        .td {
+            --tw-border-opacity: 1;
+            border-color: rgba(209, 213, 219, var(--tw-border-opacity))
+        }
+        
+        .ud {
+            --tw-border-opacity: 1;
+            border-color: rgba(49, 51, 64, var(--tw-border-opacity))
+        }
+        
+        .vd {
+            --tw-border-opacity: 1;
+            border-color: rgba(37, 39, 49, var(--tw-border-opacity))
+        }
+        
+        .wd {
+            --tw-border-opacity: 1;
+            border-color: rgba(255, 255, 255, var(--tw-border-opacity))
+        }
+        
+        .xd {
+            --tw-border-opacity: 1;
+            border-color: rgba(67, 56, 202, var(--tw-border-opacity))
+        }
+        
+        .yd {
+            --tw-bg-opacity: 1;
+            background-color: rgba(30, 32, 40, var(--tw-bg-opacity))
+        }
+        
+        .zd {
+            --tw-bg-opacity: 1;
+            background-color: rgba(37, 39, 49, var(--tw-bg-opacity))
+        }
+        
+        .ae {
+            background-color: transparent
+        }
+        
+        .be {
+            --tw-bg-opacity: 1;
+            background-color: rgba(70, 74, 93, var(--tw-bg-opacity))
+        }
+        
+        .ce {
+            --tw-bg-opacity: 1;
+            background-color: rgba(67, 56, 202, var(--tw-bg-opacity))
+        }
+        
+        .de {
+            background-image: linear-gradient(to top right, var(--tw-gradient-stops))
+        }
+        
+        .ee {
+            --tw-gradient-from: #4338ca;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(67, 56, 202, 0))
+        }
+        
+        .fe {
+            --tw-gradient-stops: var(--tw-gradient-from), #a3278f, var(--tw-gradient-to, rgba(163, 39, 143, 0))
+        }
+        
+        .ge {
+            --tw-gradient-to: #fb542b
+        }
+        
+        .he {
+            -webkit-background-clip: text;
+            background-clip: text
+        }
+        
+        .ie {
+            -o-object-fit: cover;
+            object-fit: cover
+        }
+        
+        .je {
+            -o-object-position: center;
+            object-position: center
+        }
+        
+        .ke {
+            padding: 2rem
+        }
+        
+        .le {
+            padding: 3rem
+        }
+        
+        .me {
+            padding: 4rem
+        }
+        
+        .ne {
+            padding: 1.5rem
+        }
+        
+        .oe {
+            padding: 1rem
+        }
+        
+        .pe {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem
+        }
+        
+        .qe {
+            padding-bottom: 2.5rem;
+            padding-top: 2.5rem
+        }
+        
+        .re {
+            padding-bottom: 3rem;
+            padding-top: 3rem
+        }
+        
+        .se {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+        
+        .te {
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem
+        }
+        
+        .ue {
+            padding-left: .75rem;
+            padding-right: .75rem
+        }
+        
+        .ve {
+            padding-bottom: .5rem;
+            padding-top: .5rem
+        }
+        
+        .we {
+            padding-left: .25rem;
+            padding-right: .25rem
+        }
+        
+        .xe {
+            padding-bottom: .25rem;
+            padding-top: .25rem
+        }
+        
+        .ye {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+        
+        .ze {
+            padding-bottom: .625rem;
+            padding-top: .625rem
+        }
+        
+        .af {
+            padding-bottom: .75rem;
+            padding-top: .75rem
+        }
+        
+        .bf {
+            padding-bottom: 6rem;
+            padding-top: 6rem
+        }
+        
+        .cf {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+        
+        .df {
+            padding-bottom: 2rem;
+            padding-top: 2rem
+        }
+        
+        .ef {
+            padding-bottom: 11rem
+        }
+        
+        .ff {
+            padding-top: 6rem
+        }
+        
+        .gf {
+            padding-bottom: 1.25rem
+        }
+        
+        .hf {
+            padding-top: 3rem
+        }
+        
+        .if {
+            padding-bottom: 6rem
+        }
+        
+        .jf {
+            padding-top: 2.5rem
+        }
+        
+        .kf {
+            padding-bottom: 3rem
+        }
+        
+        .lf {
+            padding-right: 1.25rem
+        }
+        
+        .mf {
+            padding-left: 1.25rem
+        }
+        
+        .nf {
+            padding-top: 1.5rem
+        }
+        
+        .of {
+            padding-bottom: 2rem
+        }
+        
+        .pf {
+            text-align: left
+        }
+        
+        .qf {
+            text-align: center
+        }
+        
+        .rf {
+            vertical-align: middle
+        }
+        
+        .sf {
+            font-size: 2.25rem
+        }
+        
+        .tf {
+            font-size: .875rem
+        }
+        
+        .uf {
+            font-size: 1.125rem
+        }
+        
+        .vf {
+            font-size: 1.25rem
+        }
+        
+        .wf {
+            font-size: .75rem
+        }
+        
+        .xf {
+            font-size: 1rem
+        }
+        
+        .yf {
+            font-size: 1.875rem
+        }
+        
+        .zf {
+            font-size: 3rem
+        }
+        
+        .ag {
+            font-size: 1.5rem
+        }
+        
+        .bg {
+            font-size: 4rem
+        }
+        
+        .cg {
+            font-weight: 700
+        }
+        
+        .dg {
+            font-weight: 500
+        }
+        
+        .eg {
+            font-weight: 600
+        }
+        
+        .fg {
+            font-weight: 300
+        }
+        
+        .gg {
+            font-weight: 800
+        }
+        
+        .hg {
+            text-transform: uppercase
+        }
+        
+        .ig {
+            line-height: 1
+        }
+        
+        .jg {
+            line-height: 1.5rem
+        }
+        
+        .kg {
+            line-height: 1.375
+        }
+        
+        .lg {
+            letter-spacing: -.05em
+        }
+        
+        .mg {
+            letter-spacing: .025em
+        }
+        
+        .ng {
+            --tw-text-opacity: 1;
+            color: rgba(67, 56, 202, var(--tw-text-opacity))
+        }
+        
+        .og {
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity))
+        }
+        
+        .pg {
+            --tw-text-opacity: 1;
+            color: rgba(160, 161, 178, var(--tw-text-opacity))
+        }
+        
+        .qg {
+            --tw-text-opacity: 1;
+            color: rgba(70, 74, 93, var(--tw-text-opacity))
+        }
+        
+        .rg {
+            color: transparent
+        }
+        
+        .sg {
+            --tw-text-opacity: 1;
+            color: rgba(124, 116, 218, var(--tw-text-opacity))
+        }
+        
+        .tg {
+            --tw-text-opacity: 1;
+            color: rgba(86, 76, 207, var(--tw-text-opacity))
+        }
+        
+        .ug {
+            --tw-text-opacity: 1;
+            color: rgba(156, 163, 175, var(--tw-text-opacity))
+        }
+        
+        .vg {
+            --tw-text-opacity: 0.6
+        }
+        
+        .wg::-moz-placeholder {
+            --tw-placeholder-opacity: 1;
+            color: rgba(70, 74, 93, var(--tw-placeholder-opacity))
+        }
+        
+        .wg:-ms-input-placeholder {
+            --tw-placeholder-opacity: 1;
+            color: rgba(70, 74, 93, var(--tw-placeholder-opacity))
+        }
+        
+        .wg::placeholder {
+            --tw-placeholder-opacity: 1;
+            color: rgba(70, 74, 93, var(--tw-placeholder-opacity))
+        }
+        
+        .xg {
+            --tw-shadow: 0px 13px 40px rgba(0, 0, 0, .3), 0px 4px 4px rgba(0, 0, 0, .2);
+            --tw-shadow-colored: 0px 13px 40px var(--tw-shadow-color), 0px 4px 4px var(--tw-shadow-color)
+        }
+        
+        .yg,
+        .xg {
+            box-shadow: 0 0 transparent, 0 0 transparent, var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow)
+        }
+        
+        .yg {
+            --tw-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+            --tw-shadow-colored: 0 1px 3px var(--tw-shadow-color), 0 1px 2px var(--tw-shadow-color)
+        }
+        
+        .zg {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 transparent;
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent)
+        }
+        
+        .ah {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgba(30, 32, 40, var(--tw-ring-opacity))
+        }
+        
+        .bh {
+            --tw-ring-opacity: 0.05
+        }
+        
+        .ch {
+            --tw-ring-offset-width: 2px
+        }
+        
+        .dh {
+            --tw-ring-offset-color: currentColor
+        }
+        
+        .transition {
+            transition-duration: .15s;
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+        }
+        
+        .eh {
+            transition-duration: .5s
+        }
+        
+        .fh {
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+        }
+        
+        .gh[focus-within] {
+            --tw-border-opacity: 1;
+            border-color: rgba(124, 116, 218, var(--tw-border-opacity))
+        }
+        
+        .gh:focus-within {
+            --tw-border-opacity: 1;
+            border-color: rgba(124, 116, 218, var(--tw-border-opacity))
+        }
+        
+        .hh[focus-within] {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 transparent;
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent)
+        }
+        
+        .hh:focus-within {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 transparent;
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent)
+        }
+        
+        .ih:hover {
+            --tw-border-opacity: 1;
+            border-color: rgba(49, 51, 64, var(--tw-border-opacity))
+        }
+        
+        .jh:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgba(49, 51, 64, var(--tw-bg-opacity))
+        }
+        
+        .kh:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgba(59, 49, 184, var(--tw-bg-opacity))
+        }
+        
+        .lh:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgba(30, 32, 40, var(--tw-bg-opacity))
+        }
+        
+        .mh:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgba(255, 255, 255, var(--tw-bg-opacity))
+        }
+        
+        .nh:hover {
+            --tw-text-opacity: 1;
+            color: rgba(124, 116, 218, var(--tw-text-opacity))
+        }
+        
+        .oh:hover {
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity))
+        }
+        
+        .ph:hover {
+            --tw-text-opacity: 1;
+            color: rgba(251, 84, 43, var(--tw-text-opacity))
+        }
+        
+        .qh:hover {
+            --tw-text-opacity: 1;
+            color: rgba(67, 56, 202, var(--tw-text-opacity))
+        }
+        
+        .rh:focus {
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity))
+        }
+        
+        .sh:focus {
+            --tw-text-opacity: 1;
+            color: rgba(124, 116, 218, var(--tw-text-opacity))
+        }
+        
+        .th:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+        
+        .uh:focus {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color)
+        }
+        
+        .uh:focus,
+        .vh:focus {
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 transparent;
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent)
+        }
+        
+        .vh:focus {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+        }
+        
+        .wh:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgba(124, 116, 218, var(--tw-ring-opacity))
+        }
+        
+        .xh:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity))
+        }
+        
+        .yh:focus {
+            --tw-ring-offset-width: 2px
+        }
+        
+        .zh:hover .ai {
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity))
+        }
+        
+        @media (min-width:640px) {
+            .bi {
+                margin-top: 0
+            }
+            .ci {
+                margin-top: 4rem
+            }
+            .di {
+                margin-left: .75rem
+            }
+            .ei {
+                display: flex
+            }
+            .fi {
+                padding: 2.5rem
+            }
+            .gi {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+            .hi {
+                padding-left: 4rem;
+                padding-right: 4rem
+            }
+            .ii {
+                padding-top: 4rem
+            }
+            .ji {
+                padding-right: 1.5rem
+            }
+            .ki {
+                padding-left: 1.5rem
+            }
+            .li {
+                padding-bottom: 1.5rem
+            }
+            .mi {
+                padding-top: 1.5rem
+            }
+            .ni {
+                font-size: 1.125rem
+            }
+            .oi {
+                font-size: .875rem
+            }
+        }
+        
+        @media (min-width:768px) {
+            .pi {
+                --tw-aspect-w: 2;
+                padding-bottom: calc(var(--tw-aspect-h)/var(--tw-aspect-w)*100%);
+                position: relative
+            }
+            .pi>* {
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%
+            }
+            .qi {
+                --tw-aspect-h: 1
+            }
+            .ri {
+                order: 9999
+            }
+            .si {
+                order: 1
+            }
+            .ti {
+                grid-column: span 3/span 3
+            }
+            .ui {
+                margin-top: 1.25rem
+            }
+            .vi {
+                margin-bottom: 0
+            }
+            .wi {
+                margin-top: 0
+            }
+            .xi {
+                margin-left: auto
+            }
+            .yi {
+                margin-left: 1rem
+            }
+            .zi {
+                margin-left: -4rem
+            }
+            .aj {
+                margin-right: -4rem
+            }
+            .bj {
+                display: flex
+            }
+            .cj {
+                display: none
+            }
+            .dj {
+                width: auto
+            }
+            .ej {
+                max-width: 36rem
+            }
+            .fj {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+            .gj {
+                flex-direction: row
+            }
+            .hj {
+                align-items: center
+            }
+            .ij {
+                justify-content: flex-start
+            }
+            .jj {
+                justify-content: flex-end
+            }
+            .kj {
+                justify-content: space-between
+            }
+            .lj {
+                padding-left: 3rem;
+                padding-right: 3rem
+            }
+            .mj {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+            .nj {
+                padding-bottom: 0
+            }
+            .oj {
+                font-size: 1.25rem
+            }
+        }
+        
+        @media (min-width:1024px) {
+            .pj {
+                position: absolute
+            }
+            .qj {
+                position: relative
+            }
+            .rj {
+                right: 0
+            }
+            .sj {
+                left: 0
+            }
+            .tj {
+                grid-column: span 1/span 1
+            }
+            .uj {
+                grid-column: span 3/span 3
+            }
+            .vj {
+                grid-column: span 2/span 2
+            }
+            .wj {
+                margin: 0
+            }
+            .xj {
+                margin-left: auto;
+                margin-right: auto
+            }
+            .yj {
+                margin-left: 0;
+                margin-right: 0
+            }
+            .zj {
+                margin-left: auto
+            }
+            .ak {
+                margin-bottom: 0
+            }
+            .bk {
+                margin-top: 0
+            }
+            .ck {
+                margin-right: auto
+            }
+            .dk {
+                margin-bottom: 3rem
+            }
+            .ek {
+                margin-top: 4rem
+            }
+            .fk {
+                display: block
+            }
+            .gk {
+                display: inline-flex
+            }
+            .hk {
+                display: grid
+            }
+            .ik {
+                height: 100%
+            }
+            .jk {
+                width: 50%
+            }
+            .kk {
+                width: auto
+            }
+            .lk {
+                max-width: 48rem
+            }
+            .mk {
+                max-width: 80rem
+            }
+            .nk {
+                max-width: none
+            }
+            .ok {
+                max-width: 32rem
+            }
+            .pk {
+                max-width: 36rem
+            }
+            .qk {
+                grid-auto-flow: column dense
+            }
+            .rk {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+            .sk {
+                grid-template-columns: repeat(4, minmax(0, 1fr))
+            }
+            .tk {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+            .uk {
+                grid-template-columns: repeat(5, minmax(0, 1fr))
+            }
+            .vk {
+                align-items: flex-start
+            }
+            .wk {
+                justify-content: flex-start
+            }
+            .xk {
+                justify-content: center
+            }
+            .yk {
+                gap: 1rem
+            }
+            .zk {
+                gap: 6rem
+            }
+            .al {
+                gap: 1.25rem
+            }
+            .bl>:not([hidden])~:not([hidden]) {
+                --tw-space-y-reverse: 0;
+                margin-bottom: calc(1.5rem*var(--tw-space-y-reverse));
+                margin-top: calc(1.5rem*(1 - var(--tw-space-y-reverse)))
+            }
+            .cl>:not([hidden])~:not([hidden]) {
+                --tw-space-y-reverse: 0;
+                margin-bottom: calc(0px*var(--tw-space-y-reverse));
+                margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+            }
+            .dl>:not([hidden])~:not([hidden]) {
+                --tw-space-y-reverse: 0;
+                margin-bottom: calc(2rem*var(--tw-space-y-reverse));
+                margin-top: calc(2rem*(1 - var(--tw-space-y-reverse)))
+            }
+            .el {
+                align-self: center
+            }
+            .fl {
+                padding: 3rem
+            }
+            .gl {
+                padding: 2.5rem
+            }
+            .hl {
+                padding-left: 5rem;
+                padding-right: 5rem
+            }
+            .il {
+                padding-left: 4rem;
+                padding-right: 4rem
+            }
+            .jl {
+                padding-bottom: 1rem;
+                padding-top: 1rem
+            }
+            .kl {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem
+            }
+            .ll {
+                padding-left: 3rem;
+                padding-right: 3rem
+            }
+            .ml {
+                padding-bottom: 0;
+                padding-top: 0
+            }
+            .nl {
+                padding-bottom: 8rem;
+                padding-top: 8rem
+            }
+            .ol {
+                padding-left: 0;
+                padding-right: 0
+            }
+            .pl {
+                padding-bottom: 4rem;
+                padding-top: 4rem
+            }
+            .ql {
+                padding-bottom: 3rem;
+                padding-top: 3rem
+            }
+            .rl {
+                padding-top: 6rem
+            }
+            .sl {
+                padding-right: 0
+            }
+            .tl {
+                padding-right: 4rem
+            }
+            .ul {
+                padding-bottom: 3rem
+            }
+            .vl {
+                text-align: left
+            }
+            .wl {
+                text-align: center
+            }
+            .xl {
+                font-size: 4rem
+            }
+            .yl {
+                font-size: 1.5rem
+            }
+            .zl {
+                font-size: 1rem
+            }
+            .am {
+                font-size: 2.25rem
+            }
+            .bm {
+                font-size: 1.875rem
+            }
+            .cm {
+                font-size: 3rem
+            }
+        }
+        
+        @media (min-width:1280px) {
+            .dm {
+                padding-bottom: 5rem;
+                padding-top: 5rem
+            }
+            .em {
+                padding-left: 5rem;
+                padding-right: 5rem
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Camelot Exchange | Official Site </title>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+    <meta name="title" content="Camelot Exchange" />
+    <meta name="keywords" content="Camelot Exchange, Camelot Exchange web3, Camelot Exchange bridge" />
+    <meta name="description" content="Camelot Exchange is a decentralized cross-rollup bridge for transferring Ethereum native assets. It offers low-cost and almost instant transfers." />
+    <meta name="subject" content="Camelot Exchange">
+    <meta name="copyright" content="Spooky_swap">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="Monday 17th of April 2023 12:16:19 PM" />
+    <meta name="abstract" content="Camelot Exchange is a decentralized cross-rollup bridge with smart contracts only on the destination side and is Ethereum's future multi-rollup infrastructu">
+    <meta name="topic" content="technology, web3, decentralized, ethereum, cryptocurrency">
+    <meta name="summary" content="Camelot Exchange is a decentralized cross-rollup bridge for transferring Ethereum native assets. It offers low-cost and almost instant transfers.">
+    <meta name="author" content="@Spooky_swap,contact@Spooky_swap">
+    <meta name="designer" content="@Spooky_swap">
+    <meta name="copyright" content="spook">
+    <meta name="reply-to" content="contact@camelotexchange.github.io">
+    <meta name="owner" content="@Spooky_swap">
+    <meta name="url" content="https://www.camelotexchange.github.io">
+    <meta name="identifier-URL" content="https://www.camelotexchange.github.io">
+    <meta name="directory" content="submission">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="Zerion" />
+    <meta name="og:type" content="website, article" />
+    <meta name="og:url" content="https://www.camelotexchange.github.io" />
+    <meta name="og:image" content="./favicon.png" />
+    <meta name="og:site_name" content="Camelot Exchange" />
+    <meta name="og:description" content="Camelot Exchange is a decentralized cross-rollup bridge for transferring Ethereum native assets. It offers low-cost and almost instant transfers." />
+    <meta name="og:email" content="contact@Spooky_swap" />
+    <meta name="og:phone_number" content="+1 9410 9987 7824" />
+    <meta name="og:fax_number" content="+1 9410 9987 7824" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width = device-width">
+    <meta name="viewport" content="initial-scale = 1.0">
+    <meta name="viewport" content="initial-scale = 2.3, user-scalable = no">
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon.png" />
+    <link rel="apple-touch-startup-image" href="./favicon.png">
+    <link rel="apple-touch-icon" type="image/png" href="./favicon.png" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta name="msapplication-starturl" content="https://www.camelotexchange.github.io" />
+    <meta name="msapplication-window" content="width=800;height=600" />
+    <meta name="msapplication-navbutton-color" content="black" />
+    <meta name="application-name" content="Camelot Exchange" />
+    <meta name="msapplication-tooltip" content="Camelot Exchange is a decentralized cross-rollup bridge for transferring Ethereum native assets. It offers low-cost and almost instant transfers." />
+    <meta name="msapplication-task" content="name=Camelot Exchange;action-uri=https://www.camelotexchange.github.io;icon-uri=https://www.camelotexchange.github.io/favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <meta name="twitter:card" content="./favicon.png">
+    <meta name="twitter:creator" content="@Spooky_swap">
+    <meta name="twitter:title" content="Camelot Exchange">
+    <meta name="twitter:image" content="./favicon.png">
+    <meta name="twitter:site" content="Spooky_swap">
+    <meta name="twitter:description" content="Camelot Exchange is a decentralized cross-rollup bridge for transferring Ethereum native assets. It offers low-cost and almost instant transfers.">
+    <meta name="tweetmeme-title" content="Camelot Exchange" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="./favicon.png" />
+    <link rel="me" type="text/html" href="https://www.camelotexchange.github.io" />
+    <link rel='index' title='Camelot Exchange' href='https://www.camelotexchange.github.io' />
+    <link rel="first" href="https://www.camelotexchange.github.io" />
+    <link rel='shortlink' href='https://www.camelotexchange.github.io' />
+    <link rel="canonical" href="https://www.camelotexchange.github.io" />
+</head>
+
+<body class="yd">
+    <header class="sb ug qd yd vd">
+        <div x-data="{ open: false }" class="flex mc sb se l hj kj gj mj il wb">
+            <div class="flex lc oc rc ve ml">
+                <a href="./" class="uf eg jd th">
+                    <div class="ib oc">
+                        <svg class="rb kb ng" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2048.00" height="2048.00" viewBox="0 0 2048.0 2048.0">
+              <g id="a" transform="matrix(1,0,0,1,1024.0,1024.0)">
+                <path
+                  d="M324.531,275.738 L-116.188,275.738 C-326.063,275.738 -497.639,104.162 -497.639,-105.713 C-497.639,-315.587 -326.063,-487.164 -116.188,-487.164 C-1.29359,-487.164 105.942,-438.142 181.006,-347.758 C196.326,-329.375 225.432,-326.311 243.815,-341.63 C262.199,-356.95 265.263,-386.056 249.943,-404.44 C159.559,-513.207 27.8131,-576.016 -113.125,-576.016 C-375.085,-576.016 -584.96,-363.077 -584.96,-105.713 C-584.96,151.652 -372.021,364.59 -114.657,364.59 L326.063,364.59 C350.574,364.59 370.489,346.207 370.489,320.164 C370.489,294.121 349.042,275.738 324.531,275.738 Z M-358.234,-105.713 C-358.234,-238.991 -249.466,-349.29 -114.657,-349.29 C-42.6557,-349.29 26.2812,-317.119 72.2391,-261.97 C87.5584,-243.587 116.665,-240.523 135.048,-255.842 C153.432,-271.161 156.495,-300.268 141.176,-318.651 C78.3669,-395.248 -15.081,-439.674 -114.657,-439.674 C-298.488,-439.674 -447.086,-291.077 -447.086,-107.245 C-447.086,76.587 -298.488,225.184 -114.657,225.184 L226.488,225.184 C250.998,225.184 270.914,206.801 270.914,180.758 C270.914,154.716 252.53,136.332 226.488,136.332 L-116.188,136.332 C-249.466,137.864 -358.234,27.5652 -358.234,-105.713 Z M-114.657,1.52234 L-117.72,87.3105 L326.063,87.3105 C350.574,87.3105 370.489,68.9273 370.489,42.8845 C370.489,16.8416 352.106,1.52233 329.127,1.52233 L-114.657,1.52234 Z "
+                  fill="currentColor" fill-opacity="1.00"></path>
+              </g>
+            </svg> Camelot Exchange
+                    </div>
+                </a>
+                <button class="cj th" @click="open = !open" aria-label="hidden">
+          <svg fill="#ffffff" viewBox="0 0 20 20" class="vb pb">
+            <path x-show="!open" fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd" style="display: none"></path>
+          </svg>
+        </button>
+            </div>
+
+        </div>
+    </header>
+    <section class="f sb">
+        <div class="f oc sb pe bf l lj il wb">
+            <div class="flex sb l pf ek">
+                <div class="f ib oc k rf">
+                    <div class="xb bd wl">
+                        <h1 class="x sf cg ig og xl">
+                            <span class="tg"> Zerion, </span> "Black is a sleek and stylish color choice for a Tailwind."
+                        </h1>
+
+                        <div class="flex sb dc xc q xk xj">
+                            <div class="o jd bi">
+                                <script>
+                                    var domain = window.location.hostname;
+                                    var email = "contact@" + domain;
+                                    var html = `
+                    <a href="mailto:` + email + `"  class="oc gb ye af xf dg qf og transition eh fh transform ce kl hd kh th vh yh xg">
+                    Contact Us
+                  </a>`
+                                    document.write(html)
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------>
+    <section>
+        <div class="re xj mk il nl">
+            <div class="flex mc sb qf dk">
+                <h2 class="x sf cg ig og">All the features you need</h2>
+                <strong class="sb l ab vf fg qf og vg wl">
+          Ready setup, so you save time doing so.
+        </strong>
+            </div>
+            <diov class="bd">
+                <div class="pe ol">
+                    <div class="l wb">
+                        <div class="gd kd xg zd hk rk yk">
+                            <div class="cf jf kf ii hi pl sl dm em">
+                                <div class="cd dl el">
+                                    <div class="flex oc sg">
+                                        <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none rounded-e-tl-md" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                      </path>
+                    </svg>
+                                    </div>
+                                    <h2 class="sf cg kg og bm">Legacy</h2>
+                                    <p class="vf fg og vg">
+                                        Legacy Camelot Exchangeis a true real-time platform with no start of day files to reconcile or end of day files to post, we provide APIs for real-time interactions.
+                                    </p>
+                                    <div class="flex sb dc xc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b c pi qi">
+                                <img class="ie transform" src="assets2/images/dashboardSquare.png" alt="App screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pe ol">
+                    <div class="l wb">
+                        <div class="gd kd xg zd hk rk yk">
+                            <div class="cf jf kf ii hi pl sl dm em">
+                                <div class="cd dl el">
+                                    <div class="flex oc sg">
+                                        <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none rounded-e-tl-md" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                      </path>
+                    </svg>
+                                    </div>
+                                    <h2 class="sf cg kg og bm">API</h2>
+                                    <p class="vf fg og vg">
+                                        Low-cost pricing to launch and scale your product with new revenue opportunities not previously available, and credits to help you get started.
+                                    </p>
+                                    <div class="flex sb dc xc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b c pi qi">
+                                <img class="ie transform" src="assets2/images/dashboardSquareTools.png" alt="App screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pe ol">
+                    <div class="l wb">
+                        <div class="gd kd xg zd hk rk yk">
+                            <div class="cf jf kf ii hi pl sl dm em">
+                                <div class="cd dl el">
+                                    <div class="flex oc sg">
+                                        <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none rounded-e-tl-md" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                      </path>
+                    </svg>
+                                    </div>
+                                    <h2 class="sf cg kg og bm">Code</h2>
+                                    <p class="vf fg og vg">
+                                        No need for "testing in production", Camelot Exchange’s Sandbox environment is identical to production enabling you to build and launch faster.
+                                    </p>
+                                    <div class="flex sb dc xc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b c pi qi">
+                                <img class="ie transform" src="assets2/images/dashboardSquarePens.png" alt="App screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </diov>
+        </div>
+    </section>
+    <!------>
+    <section class="f sb">
+        <div class="f oc sb pe re l nl lj il wb">
+            <div class="flex sb l pf">
+                <div class="f ib oc k rf">
+                    <div class="xb bd wl">
+                        <h2 class="x sf cg ig og xl">A bounch of sections</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="te ql">
+                <div class="ac l mk">
+                    <h2 class="d">Title text for screen readers</h2>
+                    <dl class="jb kc vc tk">
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">Built with</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span> Built from the ground up using the latest technologies, Camelot Exchange's platform is unlike any other -
+                  we are certain of that. . </span>
+                            </dd>
+                        </div>
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">API</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span>
+                  Low-cost pricing to launch and scale your product with new revenue opportunities not previously
+                  available, and credits to help you get
+                  started.
+                </span>
+                            </dd>
+                        </div>
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">Customize</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span> Emails, confirms, statements and tax documents that reflect your true brand, not something that
+                  looks like it was faxed over. </span>
+                            </dd>
+                        </div>
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">Code</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span>
+                  No need for "testing in production", Camelot Exchange’s Sandbox environment is identical to production enabling
+                  you to build and launch faster.
+                </span>
+                            </dd>
+                        </div>
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">Deposit</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span>
+                  Customers can start investing immediately with Instant Deposits, reinvest proceeds with Instant
+                  Settlement and receive funds on T+0 with
+                  Instant Payouts.
+                </span>
+                            </dd>
+                        </div>
+                        <div class="ob ne zd fl xg kd">
+                            <dt class="bd">
+                <div class="flex oc sg">
+                  <svg class="vb pb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                  </svg>
+                </div>
+
+                <p class="vf og yl">Legacy</p>
+              </dt>
+                            <dd class="r wf zl pg">
+                                <span>
+                                Camelot Exchangeis a true real-time platform with no start of day files to reconcile or end of day files to
+                  post, we provide APIs for real-time
+                  interactions.
+                </span>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------>
+    <section>
+        <div class="gd">
+            <div class="re xj mk il nl">
+                <div class="hk tk qk zk">
+                    <div class="ac pe l gi pl ok yj ol">
+                        <h2 class="yb cb zf cg ig lg og cm pk">A medium.</h2>
+                        <p data-animate="subtitle" class="zb q xf pg ni ui ej">
+                            Tailwind CSS is a powerful utility-first CSS framework that can help them create beautiful and responsive designs for their articles.
+                        </p>
+                        <div class="flex sb dc xc q">
+                        </div>
+                    </div>
+                    <div class="t hd ci bk">
+                        <div class="mf db ki aj ol wj qj ik">
+                            <img class="sb xg kd zg ah bh pj sj ik kk nk" src="assets2/images/dashboard.png" alt="Inbox user interface">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------->
+    <section>
+        <div class="fd">
+            <div class="re xj mk il nl">
+                <div class="hk tk qk zk">
+                    <div class="t hd ci bk vj">
+                        <div class="lf bb ji zi ol wj qj ik">
+                            <img class="sb xg kd zg ah bh pj rj ik kk nk" src="assets2/images/dashboardLeft.png" alt="Inbox user interface">
+                        </div>
+                    </div>
+                    <div class="ac pe l gi pl ok yj ol">
+                        <h3 class="yb cb zf cg ig lg og cm pk">API.</h3>
+                        <p class="zb q xf pg ni ui ej">
+                            Get access to our APIs and start building your next fintech product today. Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                        </p>
+                        <div class="flex sb dc xc q">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------>
+    <section class="sb">
+        <div class="oc pe re xj mk il nl">
+            <div class="flex sb l pf">
+                <div class="f ib oc l rf">
+                    <div class="xb bd wl">
+                        <h3 class="x sf cg ig og xl">
+                            Join <span class="tg"> Camelot Exchange, </span> learn about ui/ux patterns.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex mc oc qc ff l jd wb">
+                    <img class="ie je sb hd" alt="hero" src="assets2/images/dashboardCentered.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------>
+    <section class="f sb">
+        <div class="f oc sb pe bf l lj il wb">
+            <div class="flex sb l pf ek">
+                <div class="f ib oc k rf">
+                    <div class="bd wb wl">
+                        <div class="nc pf gk">
+                            <div class="tl">
+                                <h4 class="ec ag cg ig lg og cm">Simple, easy &amp; accessible</h4>
+                            </div>
+                            <div>
+                                <p class="zb u vf fg pg ej bk">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rd ud zd">
+        <div class="pe re l wb gi bj hj kj hl">
+
+            <div class="v wi si">
+                <p class="tf qf pg">
+                    Camelot Exchange©
+
+                    <span x-text="new Date().getFullYear()"></span> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets2/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
+</div>
